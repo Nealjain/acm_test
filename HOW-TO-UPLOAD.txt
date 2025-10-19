@@ -1,0 +1,92 @@
+========================================
+  SAKEC ACM WEBSITE - UPLOAD TO CPANEL
+========================================
+
+FILE TO UPLOAD: acm-website.zip (12 MB)
+
+STEP-BY-STEP INSTRUCTIONS:
+========================================
+
+1. LOGIN TO CPANEL
+   - Go to your cPanel URL
+   - Enter username and password
+
+2. OPEN FILE MANAGER
+   - Find "File Manager" icon
+   - Click to open
+
+3. GO TO PUBLIC_HTML
+   - Navigate to: /home/sakechostingacm/public_html/
+   - This is where your website files go
+
+4. BACKUP OLD FILES (Optional)
+   - Select all existing files
+   - Click "Compress" 
+   - Download the backup
+   - Then delete all files
+
+5. UPLOAD THE ZIP FILE
+   - Click "Upload" button at top
+   - Click "Select File"
+   - Choose: acm-website.zip
+   - Wait for upload to complete (may take 2-3 minutes)
+
+6. EXTRACT THE ZIP
+   - Find acm-website.zip in the file list
+   - Right-click on it
+   - Select "Extract"
+   - Click "Extract Files"
+   - Files will extract to: out/ folder
+
+7. MOVE FILES TO ROOT
+   - Open the "out" folder
+   - Select ALL files inside (Ctrl+A or Cmd+A)
+   - Click "Move" button
+   - Move to: /home/sakechostingacm/public_html/
+   - Click "Move Files"
+
+8. CLEANUP
+   - Delete the empty "out" folder
+   - Delete acm-website.zip file
+
+9. VERIFY
+   - Visit: http://sakec.acm.org
+   - Your website should be live!
+
+========================================
+IMPORTANT FILES TO CHECK:
+========================================
+
+Make sure these are in public_html root:
+✓ .htaccess (enable "Show Hidden Files" to see it)
+✓ index.html
+✓ _next/ folder
+✓ All other HTML files
+
+========================================
+TROUBLESHOOTING:
+========================================
+
+Problem: Can't see .htaccess file
+Solution: Click "Settings" → Enable "Show Hidden Files"
+
+Problem: 404 errors when clicking links
+Solution: Make sure .htaccess is in public_html root
+
+Problem: Styles not loading
+Solution: Make sure _next/ folder uploaded completely
+
+Problem: Images not showing
+Solution: Check all image files uploaded
+
+========================================
+NEED HELP?
+========================================
+
+Check these files in your project:
+- CPANEL-DEPLOYMENT.md (detailed guide)
+- UPLOAD-INSTRUCTIONS.md (alternative methods)
+
+========================================
+
+Your website is ready to go live! 🚀
